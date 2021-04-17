@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Roboto Slab', serif;
+	color: white;
+}
+
+.container {
+   position: relative;
+	border-radius: 20px;
+   overflow: hidden;
+	background-color: rgb(18, 17, 27);
+	max-width: 600px;
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		'input input input input'
+		'ac del mod div'
+		'button7 button8 button9 mul'
+		'button4 button5 button6 mins'
+		'button1 button2 button3 plus'
+		'button0 button0 dot equal';
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(1, 100px) repeat(5, 70px);
+	margin: 0 auto;
+	margin-top: 20px;
+
+	.buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// border: 1px solid orange;
+		cursor: pointer;
+		font-size: 22px;
+		&:hover {
+			background-color: rgb(34, 32, 46);
+		}
+	}
+
+	input {
+		background-color: rgb(18, 17, 27);
+		color: white;
+		grid-area: input;
+		text-align: right;
+		font-size: 30px;
+		padding-right: 20px;
+      outline: none;
+      border: none;
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+
+   .inspect{
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      color: rgb(113, 89, 177);
+   }
+
+	.func {
+		color: rgb(105, 82, 168);
+	}
+
+	.ac {
+		grid-area: ac;
+	}
+	.del {
+		grid-area: del;
+	}
+	.mod {
+		grid-area: mod;
+	}
+	.div {
+		grid-area: div;
+	}
+	.but7 {
+		grid-area: button7;
+	}
+	.but8 {
+		grid-area: button8;
+	}
+	.but9 {
+		grid-area: button9;
+	}
+	.mul {
+		grid-area: mul;
+	}
+	.but4 {
+		grid-area: button4;
+	}
+	.but5 {
+		grid-area: button5;
+	}
+	.but6 {
+		grid-area: button6;
+	}
+	.min {
+		grid-area: mins;
+	}
+	.but1 {
+		grid-area: button1;
+	}
+	.but2 {
+		grid-area: button2;
+	}
+	.but3 {
+		grid-area: button3;
+	}
+	.plus {
+		grid-area: plus;
+	}
+	.but0 {
+		grid-area: button0;
+	}
+	.dot {
+		grid-area: dot;
+	}
+	.equal {
+		grid-area: equal;
+	}
+}

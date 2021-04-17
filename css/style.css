@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Roboto Slab', serif;
+  color: white; }
+
+.container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #12111b;
+  max-width: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'input input input input' 'ac del mod div' 'button7 button8 button9 mul' 'button4 button5 button6 mins' 'button1 button2 button3 plus' 'button0 button0 dot equal';
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100px) repeat(5, 70px);
+  margin: 0 auto;
+  margin-top: 20px; }
+  .container .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px; }
+    .container .buttons:hover {
+      background-color: #22202e; }
+  .container input {
+    background-color: #12111b;
+    color: white;
+    grid-area: input;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 20px;
+    outline: none;
+    border: none; }
+    .container input:focus {
+      border: none;
+      outline: none; }
+  .container .inspect {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    color: #7159b1; }
+  .container .func {
+    color: #6952a8; }
+  .container .ac {
+    grid-area: ac; }
+  .container .del {
+    grid-area: del; }
+  .container .mod {
+    grid-area: mod; }
+  .container .div {
+    grid-area: div; }
+  .container .but7 {
+    grid-area: button7; }
+  .container .but8 {
+    grid-area: button8; }
+  .container .but9 {
+    grid-area: button9; }
+  .container .mul {
+    grid-area: mul; }
+  .container .but4 {
+    grid-area: button4; }
+  .container .but5 {
+    grid-area: button5; }
+  .container .but6 {
+    grid-area: button6; }
+  .container .min {
+    grid-area: mins; }
+  .container .but1 {
+    grid-area: button1; }
+  .container .but2 {
+    grid-area: button2; }
+  .container .but3 {
+    grid-area: button3; }
+  .container .plus {
+    grid-area: plus; }
+  .container .but0 {
+    grid-area: button0; }
+  .container .dot {
+    grid-area: dot; }
+  .container .equal {
+    grid-area: equal; }
